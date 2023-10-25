@@ -32,7 +32,7 @@ for i in range(datesLength):
 # dates = [datetime.strptime(d, "%Y-%m-%d") for d in dates]
 
 totalDays = int((((dates[datesLength-1]-dates[0]).total_seconds())/86400)+1)
-daysLeft = int((((dates[todayPos]-dates[0]).total_seconds())/86400)+1)
+daysLeft = int((((dates[2]-dates[todayPos]).total_seconds())/86400)+1)
 daysCompleted = (totalDays-daysLeft)
 percentCompleted = (daysCompleted/totalDays)*100
 percentCompletedAsString = (str(percentCompleted)[0:5])+"%"
